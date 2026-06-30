@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Speaking Part 3 - Ms Lê Hằng English</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(-45deg, #8854C0, #FF7597, #FDCB6E, #00C9A7);
+            --card-bg: rgba(255, 255, 255, 0.93);
+            --text-color: #2D3436;
+            --accent-purple: #8854C0;
+            --accent-pink: #FF7597;
+            --accent-green: #00C9A7;
+            --accent-yellow: #FDCB6E;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: var(--primary-gradient);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Họa tiết SVG lơ lửng phía sau */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.3;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.6'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 9c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm1 61c3.16 0 5.72-2.56 5.72-5.72 0-3.16-2.56-5.72-5.72-5.72-3.16 0-5.72 2.56-5.72 5.72 0 3.16 2.56 5.72 5.72 5.72zm44 3c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm-80-3c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm33-45c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 42c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm37 12c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM15 62c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'/%3E%3C/g%3E%3C/svg%3E");
+            animation: floatingPattern 30s linear infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatingPattern {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        header, .container, .notice-box {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header phong cách tinh tế nhỏ gọn */
+        header {
+            text-align: center;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 8px 25px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        header h4 {
+            color: var(--accent-purple);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Khung thông báo */
+        .notice-box {
+            background: #FFF3CD;
+            border: 3px dashed #FFC107;
+            border-radius: 16px;
+            padding: 15px;
+            max-width: 900px;
+            width: 100%;
+            margin-bottom: 25px;
+            color: #856404;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .notice-box h5 {
+            font-size: 1.1rem;
+            font-weight: 900;
+            margin-bottom: 8px;
+            color: #D39E00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .notice-box p {
+            font-size: 0.95rem;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        /* Container tổng thể */
+        .container {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 20px;
+            max-width: 1300px;
+            width: 100%;
+            height: calc(100vh - 180px);
+            min-height: 550px;
+        }
+
+        /* Vùng điều hướng bên trái (Tab List) */
+        .tab-navigation {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 15px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            max-height: 100%;
+            border: 4px solid #FFF;
+        }
+
+        .tab-navigation::-webkit-scrollbar {
+            width: 8px;
+        }
+        .tab-navigation::-webkit-scrollbar-thumb {
+            background: #FF7597;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--accent-purple);
+            text-transform: uppercase;
+            padding: 10px 5px;
+            margin-bottom: 10px;
+            border-bottom: 3px double #E0D4F0;
+            text-align: center;
+        }
+
+        .tab-btn {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border: none;
+            background: #F1F2F6;
+            color: var(--text-color);
+            border-radius: 16px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 4px solid #DFE4EA;
+        }
+
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            background: #E4E7EB;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-purple);
+            color: white;
+            border-bottom: 4px solid #5F378A;
+            transform: scale(1.02);
+            box-shadow: 0 6px 15px rgba(136, 84, 192, 0.3);
+        }
+
+        .tab-btn .icon {
+            font-size: 1.2rem;
+        }
+
+        /* Vùng nội dung hiển thị bên phải */
+        .content-area {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            max-height: 100%;
+            border: 4px solid #FFF;
+            position: relative;
+        }
+
+        .content-area::-webkit-scrollbar {
+            width: 8px;
+        }
+        .content-area::-webkit-scrollbar-thumb {
+            background: #00C9A7;
+            border-radius: 10px;
+        }
+
+        .topic-panel {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .topic-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* UI Elements của Topic */
+        .topic-header {
+            background: linear-gradient(135deg, var(--accent-pink), #FF92AD);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 20px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(255, 117, 151, 0.2);
+            border-bottom: 5px solid #D65273;
+        }
+
+        /* Tổng hợp câu hỏi */
+        .overview-box {
+            background: #EDF2F7;
+            border-left: 6px solid var(--accent-purple);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        .overview-box h3 {
+            font-size: 1.1rem;
+            color: var(--accent-purple);
+            margin-bottom: 12px;
+            font-weight: 900;
+        }
+
+        .overview-box ol {
+            padding-left: 20px;
+        }
+
+        .overview-box li {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #4A5568;
+            font-size: 1rem;
+        }
+
+        /* Chi tiết từng câu hỏi */
+        .question-block {
+            background: white;
+            border: 2px solid #E2E8F0;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            position: relative;
+        }
+
+        .question-title {
+            font-size: 1.15rem;
+            font-weight: 900;
+            color: #2D3748;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.4;
+        }
+
+        .question-title .q-badge {
+            background: var(--accent-green);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            white-space: nowrap;
+            margin-top: 2px;
+        }
+
+        .method-badge {
+            display: inline-block;
+            background: #EBF8FF;
+            color: #2B6CB0;
+            border: 1px solid #BEE3F8;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .outline-section {
+            background: #FFFDF5;
+            border: 1px dashed var(--accent-yellow);
+            border-radius: 12px;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+        }
+
+        .outline-section strong {
+            color: #B7791F;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .outline-section p {
+            color: #744210;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        .sample-section {
+            background: #F0FDF4;
+            border-left: 5px solid var(--accent-green);
+            border-radius: 4px 12px 12px 4px;
+            padding: 15px;
+        }
+
+        .sample-section strong {
+            color: #22543D;
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .sample-section p {
+            color: #1A5235;
+            font-weight: 700;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        /* Bảng Paraphrase */
+        .paraphrase-section {
+            margin-top: 35px;
+        }
+
+        .paraphrase-section h3 {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--accent-purple);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .para-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid #E2E8F0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .para-table th {
+            background: var(--accent-purple);
+            color: white;
+            padding: 14px 18px;
+            font-weight: 900;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .para-table td {
+            padding: 14px 18px;
+            background: white;
+            border-bottom: 1px solid #E2E8F0;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #4A5568;
+            line-height: 1.5;
+        }
+
+        .para-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .para-table tr:nth-child(even) td {
+            background: #F8FAFC;
+        }
+
+        .para-table td strong {
+            color: var(--accent-pink);
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 992px) {
+            .container {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+            .tab-navigation {
+                max-height: 250px;
+            }
+            body {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+
+    <header>
+        <h4>Giáo viên tạo: Ms Lê Hằng English</h4>
+    </header>
+
+    <div class="notice-box">
+        <h5>⚠️ LỜI NHẮC CỰC KỲ TRỌNG TÂM ⚠️</h5>
+        <p>SAU KHI HỌC XONG KIẾN THỨC TRONG FILE NÀY, CON HÃY LÊN WEB LUYENNOI ĐỂ THỰC HÀNH ĐỀU ĐẶN MỖI NGÀY (TỐI THIỂU 25 LẦN) VÀ GỬI KẾT QUẢ VÀO NHÓM ZALO. CHỈ CÓ LUYỆN TẬP ĐỀU ĐẶN MỚI GIÚP TĂNG ĐIỂM SPEAKING VÀ TỰ TIN HƠN TRONG PHÒNG THI.</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="tab-navigation">
+            <div class="section-title">✨ Hướng dẫn Mẫu</div>
+            <button class="tab-btn active" onclick="openTopic(event, 'ly-thuyet')">
+                <span class="icon">📘</span> Lý thuyết câu trả lời
+            </button>
+            
+            <div class="section-title">📦 Danh sách Chủ đề</div>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-law')">
+                <span class="icon">🌿</span> Environmental Law
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-goal')">
+                <span class="icon">🎯</span> Long-term Goal
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-animal')">
+                <span class="icon">🦊</span> Story with Animals
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-food')">
+                <span class="icon">🍰</span> Special Food
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-video')">
+                <span class="icon">🎬</span> Interesting Video
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-building')">
+                <span class="icon">🏢</span> Tall/Interesting Building
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-plan')">
+                <span class="icon">📅</span> Plan to Change
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-cake')">
+                <span class="icon">🎂</span> Special Cake
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-ads')">
+                <span class="icon">📢</span> Famous Advertisement
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-newlaw')">
+                <span class="icon">⚖️</span> New Law Introduction
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-decision')">
+                <span class="icon">💡</span> Important Decision
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-job')">
+                <span class="icon">✈️</span> Job in Foreign Country
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-music')">
+                <span class="icon">🎵</span> Music Event
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-noteacher')">
+                <span class="icon">🧠</span> Learn without Teacher
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-tech')">
+                <span class="icon">💻</span> Technology Piece
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-perfectjob')">
+                <span class="icon">💼</span> Perfect Future Job
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-app')">
+                <span class="icon">📱</span> Program or App
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-tv')">
+                <span class="icon">📺</span> TV / Online Program
+            </button>
+            <button class="tab-btn" onclick="openTopic(event, 'topic-spent')">
+                <span class="icon">💰</span> Item Spent More
+            </button>
+        </div>
+
+        <div class="content-area">
+
+            <div id="ly-thuyet" class="topic-panel active">
+                <div class="topic-header">SPEAKING PART 3: HOW TO ANSWER + KÈM VÍ DỤ</div>
+                <div class="overview-box">
+                    <h3>CÁCH TRẢ LỜI CHUẨN HOÁ</h3>
+                    <p style="font-weight: 700; margin-bottom: 5px; color: #2D3748;">• Part 1: Trả lời trực tiếp = paraphrasing the question</p>
+                    <p style="font-weight: 700; color: #2D3748;">• Part 2: Expand the questions</p>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Mẫu lý thuyết</span> Do you think doctors should be paid more? Why?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Outline / Tiêu chí cấu trúc:</strong>
+                        <p>Topic sentence = Trả lời trực tiếp = paraphrasing question<br>
+                        Supporting sentence 1: Explain + example + Hypothesis/ Discuss<br>
+                        Supporting sentence 2: Explain + example + Hypothesis/ Discuss<br>
+                        Keywords: high-pressure job / hold lives in hands / many years of intense training</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Sample Answer:</strong>
+                        <p>"Personally, I definitely think medical professionals deserve higher salaries. Firstly, their job is extremely high-pressure, as they hold people's lives in their hands every day. Secondly, they have to spend many years undergoing intense training, so a high income is a fair reward."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Mẫu lý thuyết</span> Do you think doctors should be paid more? Why? (Góc nhìn khác)</div>
+                    <div class="method-badge">Cách 2: Depends on (gender / generation / hobby / preference) → xem 1 vấn đề ở nhiều khía cạnh</div>
+                    <div class="outline-section">
+                        <strong>Tiêu chí phân loại: Experience & Specialization</strong>
+                        <p>Outline: depends on years of experience / senior doctors vs graduates / specialization / surgeons vs general practitioners</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Sample Answer:</strong>
+                        <p>"I think this disparity depends on experience and specialization. Senior doctors with decades of experience naturally earn more than fresh graduates. Furthermore, specialized fields like brain surgery require higher expertise, so their pay is much higher than general practitioners."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Mẫu lý thuyết</span> Ví dụ sâu rộng về môn Sinh học cho Trẻ em</div>
+                    <div class="method-badge">Cách 3: 1 idea: Explain + example + Hypothesis/ Discuss → Nói kĩ</div>
+                    <div class="outline-section">
+                        <strong>Tiêu chí áp dụng: Deep dive (1 idea)</strong>
+                        <p>Outline: satisfy natural curiosity / understand the world / explore plants and animals / keep them hooked</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Sample Answer:</strong>
+                        <p>"Yes, I absolutely think so. This is mainly because biology satisfies children's natural curiosity about the world. For example, when kids learn how plants grow or how animals behave, they feel connected to nature, which keeps them hooked on the subject."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Mẫu lý thuyết</span> Ví dụ về sự thay đổi của phương pháp học</div>
+                    <div class="method-badge">Cách 4: Give different contexts (In the past / Now - Currently / In the future / Person)</div>
+                    <div class="outline-section">
+                        <strong>Tiêu chí áp dụng: Contexts (Methods)</strong>
+                        <p>Outline: past: passive learning, memorizing / now: interactive learning, trial and error</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Sample Answer:</strong>
+                        <p>"Learning methods have changed significantly. In the past, people learned passively by memorizing facts from textbooks. Currently, people prefer interactive learning and trial-and-error, which helps them understand things deeply through practical experience."</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="topic-law" class="topic-panel">
+                <div class="topic-header">An environmental law you would like your country to introduce / A law on environmental protection</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What environmental laws does your country already have?</li>
+                        <li>Will there be a law that is universally accepted?</li>
+                        <li>How does technology affect the law?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What environmental laws does your country already have?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>anti-littering laws / heavy fines / regulations on industrial waste / factories processing water</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"My country has implemented several green regulations. Firstly, we have strict anti-littering laws that impose heavy fines on people throwing trash in public. Secondly, there are regulations on industrial waste, forcing factories to process water before releasing it."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Will there be a law that is universally accepted?</div>
+                    <div class="method-badge">Cách 2: Depends on (National interests / Economy)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on economic status / rich countries: support strict carbon tax / developing nations: prioritize economic growth</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think it depends on a nation's economic development. Wealthy countries easily accept strict carbon tax laws to protect the planet. However, developing nations might reject them because they need to prioritize economic growth and industrialization."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> How does technology affect the law?</div>
+                    <div class="method-badge">Cách 4: Contexts (Past vs Now)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>past: manually catch rule-breakers, inefficient / now: AI, cameras, track violations instantly</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Technology has transformed law enforcement. In the past, police had to manually catch rule-breakers, which was inefficient. Currently, with AI and security cameras, authorities can track traffic or environmental violations instantly and send fines automatically."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Environmental laws</td><td><strong>Green regulations / Environmental legislation</strong></td></tr>
+                            <tr><td>Impose fine on someone</td><td><strong>Levy heavy penalties on rule-breakers</strong></td></tr>
+                            <tr><td>Process water</td><td><strong>Treat industrial effluents/waste water</strong></td></tr>
+                            <tr><td>Catch rule-breakers manually</td><td><strong>Traditional physical surveillance</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-goal" class="topic-panel">
+                <div class="topic-header">A long-term goal/ambition you would like to achieve</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Should parents support their children in pursuing their ambitions?</li>
+                        <li>Is it good for a person to be ambitious?</li>
+                        <li>Why should children have ambitions?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Should parents support their children in pursuing their ambitions?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>ultimate motivation / mental support / feel safe to take risks / build confidence</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, parental backing is the ultimate motivation for a child. When teenagers know their parents support their dreams, they feel safe to take risks and work harder. This emotional support is crucial for building their long-term confidence."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Is it good for a person to be ambitious?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>drive to work hard / achieve high goals / lead to stress / never satisfied with what they have</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Ambition is a double-edged sword. On the positive side, it gives people the drive to work hard and reach high goals in life. On the negative side, being overly ambitious can cause severe stress, as they are never satisfied with their current life."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Why should children have ambitions?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>clear sense of direction / avoid wasting time / stay resilient / overcome failures at school</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think having dreams is beneficial for kids. Firstly, it gives them a clear sense of direction, helping them focus on studying instead of wasting time. Secondly, ambitions help children stay resilient and overcome small failures at school."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Parents support</td><td><strong>Parental backing / Emotional encouragement</strong></td></tr>
+                            <tr><td>Good and bad sides</td><td><strong>A double-edged sword</strong></td></tr>
+                            <tr><td>Drive to work hard</td><td><strong>Inner motivation / A relentless pursuit of excellence</strong></td></tr>
+                            <tr><td>Stay resilient</td><td><strong>Bounce back from setbacks / Foster mental toughness</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-animal" class="topic-panel">
+                <div class="topic-header">A story/book with animals in it</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Why do people always tell children stories with animals?</li>
+                        <li>What are the advantages of keeping a pet?</li>
+                        <li>Do many people keep pets in your country?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Why do people always tell children stories with animals?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>simple, easy to understand / cute characters / deliver moral lessons gently / remember better</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"This is because animal characters are cute and visually appealing to kids, making stories easy to understand. Using animals allows writers to deliver moral lessons, like honesty or kindness, gently without sounding like a boring lecture."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> What are the advantages of keeping a pet?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>reduce loneliness / offer great companionship / teach responsibility / feeding, walking pets</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Owning a pet brings two major benefits. First, it reduces loneliness and offers great companionship after a stressful day at school. Second, for children, keeping a pet teaches responsibility through daily tasks like feeding or walking them."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Do many people keep pets in your country?</div>
+                    <div class="method-badge">Cách 2: Depends on (Generation / Age)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on the generation / young people: treat pets like family, spend a lot / older generation: guard dogs, traditional view</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"The trend of keeping pets depends heavily on the generation. Young people nowadays treat cats and dogs like family members and spend a lot on pet food. Conversely, the older generation usually keeps dogs just to guard the house."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Boring lecture</td><td><strong>Tedious, didactic preaching</strong></td></tr>
+                            <tr><td>Reduce loneliness</td><td><strong>Alleviate feelings of isolation / Provide emotional solace</strong></td></tr>
+                            <tr><td>Keep a pet</td><td><strong>Pet ownership / Domesticate companion animals</strong></td></tr>
+                            <tr><td>Treat like family</td><td><strong>Incorporate into family dynamic / Humanize domestic pets</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-food" class="topic-panel">
+                <div class="topic-header">A food that people eat on special occasions/events</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Do people today prefer eating at home or in a restaurant?</li>
+                        <li>Are there any differences between the food people eat today and the food people ate in the past?</li>
+                        <li>What are the differences between everyday food and festival food?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Do people today prefer eating at home or in a restaurant?</div>
+                    <div class="method-badge">Cách 2: Depends on (Occasion / Weekday vs Weekend)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on the day / weekdays: busy, dining out to save time / weekends: cozy family dinners at home</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think it depends on their schedule. On busy weekdays, people prefer dining out or ordering fast food to save time. However, during weekends, most Vietnamese families prefer cooking at home to enjoy a cozy atmosphere together."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Are there any differences between the food people eat today and the food people ate in the past?</div>
+                    <div class="method-badge">Cách 4: Contexts (Past vs Now)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>past: organic, fresh from garden, simple / now: processed food, fast food, global cuisine</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Dietary habits have changed a lot. In the past, people ate organic, fresh ingredients directly from their gardens, and meals were simple. Currently, due to globalization, fast food and processed meals have become dominant in urban diets."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> What are the differences between everyday food and festival food?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>preparation time / complex traditional recipes / meaning / family gathering, luck and prosperity</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"There are two major differences. Firstly, festival food requires much longer preparation time and complex traditional recipes, like Banh Chung. Secondly, holiday dishes carry symbolic meanings, representing luck and prosperity for the family gathering."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Eating out</td><td><strong>Dining out / Culinary experiences at restaurants</strong></td></tr>
+                            <tr><td>Food habit</td><td><strong>Dietary patterns / Gastronomic preferences</strong></td></tr>
+                            <tr><td>Fresh ingredients</td><td><strong>Organic, locally-sourced produce</strong></td></tr>
+                            <tr><td>Meaning</td><td><strong>Symbolic significance / Cultural connotations</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-video" class="topic-panel">
+                <div class="topic-header">An interesting video</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What makes a video go viral online?</li>
+                        <li>Are there any differences between the videos that young men and young women like to watch?</li>
+                        <li>Are there any differences between the videos that young people and old people like to watch?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What makes a video go viral online?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>relatable content / humor, daily struggles / catchy music / short format captures attention</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Two main elements make a clip viral. First, it must have highly relatable content, like humor or daily struggles that viewers can laugh at. Second, using catchy background music and a short format helps capture the audience's attention within seconds."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Are there any differences between the videos that young men and young women like to watch?</div>
+                    <div class="method-badge">Cách 2: Depends on (Gender preference)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>men: sports, action games, tech reviews / women: beauty vlogs, fashion, cooking tutorials</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, video preferences depend on gender interests. Young men are generally drawn to sports matches, action games, or technology reviews. On the contrary, young women often prefer lifestyle vlogs, fashion hauls, or cooking tutorials."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Are there any differences between the videos that young people and old people like to watch?</div>
+                    <div class="method-badge">Cách 4: Contexts (Generation gap)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>young generation: fast-paced entertainment, TikTok trends / old generation: news, historical documentaries, gardening</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"There is a clear generation gap here. Young people love fast-paced entertainment, dance trends, and comedy skits on TikTok. Meanwhile, the elderly prefer slow-paced content, such as daily news, historical documentaries, or gardening tips on YouTube."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Go viral</td><td><strong>Gain overnight internet popularity / Spread like wildfire online</strong></td></tr>
+                            <tr><td>Capture attention</td><td><strong>Arrest the audience's attention / Engross the viewer</strong></td></tr>
+                            <tr><td>Different preference</td><td><strong>Divergent consumption habits / Distinct preferences</strong></td></tr>
+                            <tr><td>Old generation</td><td><strong>The elderly / Senior citizens / The older demographic</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-building" class="topic-panel">
+                <div class="topic-header">A tall building you like or dislike / An interesting building</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What kind of interior design style do most people like?</li>
+                        <li>Why do some people like to remodel and decorate their homes themselves?</li>
+                        <li>What are the advantages of living in tall buildings?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What kind of interior design style do most people like?</div>
+                    <div class="method-badge">Cách 2: Depends on (Age group)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on age / youth: minimalism, simple furniture, spacious / older generation: traditional style, wooden furniture, cozy</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think the favorite design depends on the age group. Young couples nowadays love minimalism with simple furniture and neutral colors to maximize space. However, older people prefer traditional styles with heavy wooden furniture."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Why do some people like to remodel and decorate their homes themselves?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>save money / hiring professional architects is costly / express personal style / custom living space</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"People choose DIY home decoration for two reasons. Firstly, it helps save a lot of money since hiring professional architects is costly. Secondly, it allows homeowners to express their personal style and create a customized living space."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> What are the advantages of living in tall buildings?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>integrated facilities / convenience / gym, supermarket, security / don't need to travel far</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"The biggest benefit is the convenience of integrated facilities. Most modern skyscrapers offer standard amenities like gyms, swimming pools, supermarkets, and 24/7 security right downstairs, so residents don't need to travel far."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Maximize space</td><td><strong>Optimize living space / Create an illusion of space</strong></td></tr>
+                            <tr><td>Decorate by themselves</td><td><strong>Engage in DIY home renovation</strong></td></tr>
+                            <tr><td>Costly</td><td><strong>Exorbitantly expensive / Financially draining</strong></td></tr>
+                            <tr><td>Tall buildings</td><td><strong>High-rise structures / Modern skyscrapers</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-plan" class="topic-panel">
+                <div class="topic-header">A plan that you had to change recently</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Do you think people like the process of making plans more, or the moment of carrying them out?</li>
+                        <li>What kind of plans do people often make?</li>
+                        <li>How does technology help people make plans?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Do you think people like the process of making plans more, or the moment of carrying them out?</div>
+                    <div class="method-badge">Cách 2: Depends on (Personality)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on personality / organized people: enjoy planning, research / action-oriented people: enjoy execution, reality</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I believe this depends on a person's character. Organized individuals love the planning process, like researching hotels or schedules. On the contrary, action-oriented people find joy only when they are actually carrying out the plan."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> What kind of plans do people often make?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>short-term plans / daily to-do lists, weekend hangouts / long-term career goals / saving money, university majors</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"People make various types of plans. In the short term, we often plan our daily to-do lists or weekend hangouts with friends. In the long term, people focus on career goals, such as saving money or choosing a university major."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> How does technology help people make plans?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>calendar and booking apps / smart reminders / organize schedules / sync across devices</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Technology makes planning effortless through smart applications. For instance, people can use calendar apps or booking platforms to organize their travel schedules and set automatic reminders, which prevents them from forgetting important tasks."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Carrying out a plan</td><td><strong>Executing a plan / Putting a plan into action</strong></td></tr>
+                            <tr><td>Organized people</td><td><strong>Meticulous planners / Methodical individuals</strong></td></tr>
+                            <tr><td>Short-term</td><td><strong>Immediate, day-to-day agendas</strong></td></tr>
+                            <tr><td>Make planning effortless</td><td><strong>Streamline the planning process</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-cake" class="topic-panel">
+                <div class="topic-header">A special cake you received from others</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What do you think of people using their mobile phones during a meal?</li>
+                        <li>In your country, do people nowadays cook at home as frequently as people did in the past?</li>
+                        <li>Do you think it’s good to communicate when eating with your family?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What do you think of people using their mobile phones during a meal?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>disrespectful / ruins family bonding / phubbing / look at screens instead of talking</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"In my opinion, using phones during a meal is quite disrespectful. It ruins family bonding because everyone is distracted by notifications and looks at screens instead of talking to each other, making the atmosphere cold."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> In your country, do people nowadays cook at home as frequently as people did in the past?</div>
+                    <div class="method-badge">Cách 4: Contexts (Past vs Now)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>past: cook daily, rare restaurants / now: busy lifestyles, food delivery apps</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Home cooking has declined over time. In the past, Vietnamese people cooked at home every day because restaurants were rare. Currently, due to busy work schedules and food delivery apps, city dwellers tend to eat out or order fast food more often."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Do you think it’s good to communicate when eating with your family?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>strengthen family bonds / share daily stories / relieve stress / feel supported by loved ones</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, dinner conversations are very important. On the one hand, it strengthens family bonds as members share their daily stories. On the other hand, talking during meals helps students relieve academic stress and feel supported by their loved ones."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Using phone during a meal</td><td><strong>Engaging in phubbing behavior</strong></td></tr>
+                            <tr><td>Atmosphere cold</td><td><strong>Sterile environment / Create an emotional disconnect</strong></td></tr>
+                            <tr><td>Home cooking</td><td><strong>Preparing home-cooked meals / Domestic culinary practice</strong></td></tr>
+                            <tr><td>Relieve stress</td><td><strong>Decompress / Vent out daily frustrations</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-ads" class="topic-panel">
+                <div class="topic-header">An advertisement with a famous person in it</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Which is more effective, online advertising or offline advertising?</li>
+                        <li>Is advertising important for a company? Why?</li>
+                        <li>Why are some advertisements boring?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Which is more effective, online advertising or offline advertising?</div>
+                    <div class="method-badge">Cách 2: Depends on (Target audience)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on target audience / young customers: online ads on Facebook, TikTok / elderly: offline billboards, TV ads</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think the effectiveness depends on the target consumers. For the younger generation, online ads on TikTok or Facebook work best. However, for older consumers, offline methods like TV commercials or street billboards are more reliable."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Is advertising important for a company? Why?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>boost brand awareness / let customers know new products / increase sales, compete with rivals</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, advertising is vital because it boosts brand awareness. Without marketing campaigns, customers would never know about a company's new products. Good ads help businesses attract new buyers and stay competitive in the market."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Why are some advertisements boring?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>lack of creativity / repeat old concepts / too repetitive / spamming viewers on YouTube causes annoyance</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"There are two main reasons. Firstly, some ads lack creativity and just repeat old concepts, making them predictable. Secondly, they are too repetitive; spamming the same video on YouTube constantly makes viewers feel annoyed rather than interested."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Advertising</td><td><strong>Marketing strategies / Promotional campaigns</strong></td></tr>
+                            <tr><td>Boost brand awareness</td><td><strong>Enhance brand visibility / Maximize market outreach</strong></td></tr>
+                            <tr><td>Boring</td><td><strong>Monotonous / Uninspiring / Lacking a creative spark</strong></td></tr>
+                            <tr><td>Cause annoyance</td><td><strong>Provoke public irritation / Instigate ad fatigue</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-newlaw" class="topic-panel">
+                <div class="topic-header">A new law you would like to introduce in your country</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>How can parents teach children to obey rules?</li>
+                        <li>What are the benefits for people to obey rules?</li>
+                        <li>Do you think children can learn about the law outside of school?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> How can parents teach children to obey rules?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>lead by example / children copy behavior / parents follow traffic rules / kids naturally learn obedience</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"The best way is for parents to lead by example. Children copy actions rather than words. For instance, if parents always wear helmets and follow traffic lights, kids will naturally understand the importance of rules and obey them."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> What are the benefits for people to obey rules?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>ensure public safety / prevent accidents / build a fair society / reduce conflicts and chaos</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Following regulations brings major benefits. First, it ensures public safety, especially traffic laws that prevent fatal accidents. Second, it helps build a fair society where everyone respects each other, reducing conflicts and chaos."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Do you think children can learn about the law outside of school?</div>
+                    <div class="method-badge">Cách 2: Depends on (Media / Environment)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on media exposure / educational cartoon videos, news / community activities / local charity programs</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, outside-school learning depends on their environment. Children can learn basic rules by watching educational cartoon videos or daily news with parents. Participation in local charity programs also teaches them about community regulations."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Lead by example</td><td><strong>Model exemplary behavior / Act as role models</strong></td></tr>
+                            <tr><td>Obey rules</td><td><strong>Adhere to regulations / Comply with statutory laws</strong></td></tr>
+                            <tr><td>Reduce chaos</td><td><strong>Avert social turmoil / Maintain social order</strong></td></tr>
+                            <tr><td>Outside of school</td><td><strong>Through informal educational channels / Extra-curricular environment</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-decision" class="topic-panel">
+                <div class="topic-header">An important decision that you made</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>How do people usually make important decisions?</li>
+                        <li>Do you think the influence of advertising is good?</li>
+                        <li>Do you think advertisements can influence our decisions when shopping?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> How do people usually make important decisions?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>seek advice from experts or parents / analyze pros and cons / list choices carefully</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"People usually make major decisions using two steps. Initially, they seek valuable advice from parents or experienced experts. After that, they analyze the pros and cons of each choice carefully to avoid regrets."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Do you think the influence of advertising is good?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>inform buyers about choices / discover discounts / lead to overspending / buy useless items due to hype</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Advertising has both good and bad sides. On the positive side, it informs buyers about new options and great discounts. On the negative side, it often leads to overspending, as people buy useless items due to social media hype."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Do you think advertisements can influence our decisions when shopping?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>strongly influence through celebrity endorsements / create artificial needs / buy products immediately to look trendy</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, commercials strongly influence our shopping choices, especially through celebrity endorsements. When we see our favorite idol using a specific smartphone, it creates an artificial need, making us want to buy it immediately to look trendy."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Analyze pros and cons</td><td><strong>Weigh up the advantages and drawbacks</strong></td></tr>
+                            <tr><td>Overspending</td><td><strong>Improper financial squandering / Impulse buying</strong></td></tr>
+                            <tr><td>Hype</td><td><strong>Sensationalized social media buzz</strong></td></tr>
+                            <tr><td>Look trendy</td><td><strong>Project a fashionable image / Maintain social status</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-job" class="topic-panel">
+                <div class="topic-header">A short-term job you want to have in a foreign country</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Why are some people unwilling to work in other countries?</li>
+                        <li>What kind of work can young people do in foreign countries?</li>
+                        <li>What personal skills are required to work in an international company?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Why are some people unwilling to work in other countries?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>language barrier and homesickness / hard to adapt / feel isolated without family support</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"The primary obstacle is the language barrier and homesickness. Moving abroad means adapting to a completely new culture and communication style. Many people feel isolated without family support, so they prefer staying in their hometown."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> What kind of work can young people do in foreign countries?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>part-time service jobs / waiters, cashiers / seasonal agricultural work / picking fruits on farms</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Young travelers can find several temporary jobs. Firstly, they can do part-time service jobs like working as waiters or cashiers in coffee shops. Secondly, seasonal agricultural work, like picking fruits on local farms, is also very popular."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> What personal skills are required to work in an international company?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>strong language proficiency / English fluency / high adaptability / work with diverse cultures</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Two essential skills are required. First, strong language proficiency, especially English fluency, is vital for daily communication. Second, candidates need high adaptability to collaborate smoothly with colleagues from diverse cultural backgrounds."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Language barrier</td><td><strong>Linguistic impediments / Communication constraints</strong></td></tr>
+                            <tr><td>Hard to adapt</td><td><strong>Suffer from acute culture shock</strong></td></tr>
+                            <tr><td>Temporary jobs</td><td><strong>Transient employment / Casual positions</strong></td></tr>
+                            <tr><td>Adaptability</td><td><strong>Cross-cultural competence / Versatility</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-music" class="topic-panel">
+                <div class="topic-header">An event you attended in which you didn’t enjoy the music played</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What are the differences between listening to music at home and at a live concert?</li>
+                        <li>Why do many people like listening to music while doing sports?</li>
+                        <li>What kind of music events are there in your country?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What are the differences between listening to music at home and at a live concert?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>at home: comfortable, free, sound control / live concert: energetic atmosphere, connect with fans</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"There are distinct vibes. Listening to music at home is comfortable and free, allowing you to control the volume easily. In contrast, going to a live concert offers an energetic atmosphere where you can see the artist and connect with thousands of fans."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Why do many people like listening to music while doing sports?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>boost motivation / energetic beats distract from physical fatigue / keep running longer</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Listening to music acts as a great motivator during workouts. Energetic beats can distract the brain from physical fatigue and boost adrenaline. As a result, people feel more enthusiastic and can run or lift weights longer."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> What kind of music events are there in your country?</div>
+                    <div class="method-badge">Cách 2: Depends on (Scale / Genre)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on the scale / large commercial music festivals: EDM, pop for youth / local acoustic shows: coffee shops, traditional music</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Music events in Vietnam depend on the target audience. There are large commercial music festivals featuring pop or EDM that attract thousands of teenagers. Conversely, small acoustic shows in coffee shops are popular for those who love gentle melodies."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Energetic atmosphere</td><td><strong>An electric, vibrant ambiance</strong></td></tr>
+                            <tr><td>Distract from fatigue</td><td><strong>Sublimate physical exertion / Overcome exhaustion</strong></td></tr>
+                            <tr><td>Do sports</td><td><strong>Engage in strenuous physical workouts</strong></td></tr>
+                            <tr><td>Gentle melodies</td><td><strong>Mellow, soothing acoustic tunes</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-noteacher" class="topic-panel">
+                <div class="topic-header">One of your friends who learned something without a teacher</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Is it better to focus on a few subjects or to learn many subjects?</li>
+                        <li>Do you think there are too many subjects for students to learn?</li>
+                        <li>Should teachers make learning in their classes fun?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Is it better to focus on a few subjects or to learn many subjects?</div>
+                    <div class="method-badge">Cách 2: Depends on (Academic stage)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on the educational stage / high school: learn many subjects for general knowledge / university: focus on a few specialized subjects</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think it depends on the student's academic stage. In high school, it's better to learn many subjects to gain broad general knowledge. However, when entering university, specializing in a few specific subjects is crucial for career preparation."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Do you think there are too many subjects for students to learn?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>yes, curriculum overloaded / study 12-13 subjects / chronic stress / lack time for soft skills</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, I agree that the current school curriculum is quite overloaded. High schoolers have to study up to 12 subjects simultaneously, which causes chronic stress. This leaves them with no time to relax or develop practical soft skills."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Should teachers make learning in their classes fun?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>increase engagement / pay attention / improve memory / games help retain knowledge longer</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Absolutely, making lessons enjoyable brings great benefits. Firstly, it increases student engagement, ensuring everyone pays attention instead of sleeping. Secondly, fun activities like educational games help teenagers retain knowledge much longer."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>General knowledge</td><td><strong>A well-rounded academic foundation</strong></td></tr>
+                            <tr><td>Curriculum overloaded</td><td><strong>An excessively dense academic syllabus</strong></td></tr>
+                            <tr><td>Chronic stress</td><td><strong>Severe psychological burnout</strong></td></tr>
+                            <tr><td>Increase engagement</td><td><strong>Stimulate active participation / Foster classroom interaction</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-tech" class="topic-panel">
+                <div class="topic-header">A piece of technology (not a phone) that you would like to own</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What are the differences between making friends in real life and online?</li>
+                        <li>What negative effects does technology have on people’s relationships?</li>
+                        <li>Do you think technology has changed the way people communicate?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What are the differences between making friends in real life and online?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>real life: trust, face-to-face interaction / online: convenient, quick connection based on hobbies</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"There are two major differences. In real life, friendships are built on trust and face-to-face interactions, making them deeper. On the other hand, online friendships are highly convenient and quick, allowing you to connect instantly based on shared hobbies."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> What negative effects does technology have on people’s relationships?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>reduce physical communication / phubbing / family members sit together but look at screens / emotional distance</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"The biggest drawback is the reduction of physical communication. Technology causes 'phubbing', where family members sit at the same dinner table but ignore each other to look at screens. This creates an emotional distance over time."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Do you think technology has changed the way people communicate?</div>
+                    <div class="method-badge">Cách 4: Contexts (Past vs Now)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>past: hand-written letters, wait for weeks / now: instant messages, video calls across the globe</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Communication has evolved completely. In the past, people relied on hand-written letters and had to wait for weeks to get a reply. Currently, thanks to smartphones and social apps, we can send instant messages or make video calls globally in seconds."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Face-to-face interaction</td><td><strong>Direct interpersonal communication</strong></td></tr>
+                            <tr><td>Negative effects</td><td><strong>Adverse repercussions / Detrimental impacts</strong></td></tr>
+                            <tr><td>Emotional distance</td><td><strong>Alienation / Undermine interpersonal intimacy</strong></td></tr>
+                            <tr><td>Evolved completely</td><td><strong>Undergone a radical transformation</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-perfectjob" class="topic-panel">
+                <div class="topic-header">A perfect job you would like to have in the future</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What kind of jobs are the most popular in your country?</li>
+                        <li>Is salary the main reason why people choose a certain job?</li>
+                        <li>What should people consider when choosing jobs?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What kind of jobs are the most popular in your country?</div>
+                    <div class="method-badge">Cách 2: Depends on (Generation / Major)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on the sector / tech and business: IT engineers, digital marketers / traditional stable roles: teachers, accountants</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Popular career choices depend on modern trends. Nowadays, technology and business roles like IT engineers or digital marketers are highly sought after by the youth. Meanwhile, traditional stable roles like teachers or accountants remain popular among parents' choices."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Is salary the main reason why people choose a certain job?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>cover living expenses / financial stability / work passion / job satisfaction, supportive environment</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"While income is crucial, it's not the only factor. On the one hand, a high salary is necessary to cover living expenses and ensure financial stability. On the other hand, work passion and a supportive office environment are also vital for long-term happiness."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> What should people consider when choosing jobs?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>personal interests / enjoy daily tasks / career growth / promotion opportunities</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Job seekers should evaluate two main things. Firstly, personal interests are key, as you must enjoy your daily tasks to avoid burnout. Secondly, career growth and promotion opportunities should be considered to ensure a secure future."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Popular job</td><td><strong>Highly sought-after occupations / Trendy career paths</strong></td></tr>
+                            <tr><td>Salary</td><td><strong>Financial remuneration / Monetary compensation</strong></td></tr>
+                            <tr><td>Supportive environment</td><td><strong>Conducive corporate culture / Harmonious workplace</strong></td></tr>
+                            <tr><td>Avoid burnout</td><td><strong>Prevent mental exhaustion / Maintain professional enthusiasm</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-app" class="topic-panel">
+                <div class="topic-header">A program or app on your computer or phone</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What do you think about some countries banning children from using social media?</li>
+                        <li>Do you think young people are more and more reliant on these programs?</li>
+                        <li>Should parents limit their children’s use of computer programs and computer games? Why and how?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What do you think about some countries banning children from using social media?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>reasonable decision / protect mental health / avoid cyberbullying, toxic comparison / focus on study</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I think this is a reasonable policy to protect children's mental health. Social media is full of toxic comparisons and cyberbullying, which can harm young minds. A ban helps kids focus on real-world activities and their studies."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Do you think young people are more and more reliant on these programs?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>study and entertainment depend on apps / search Google, watch YouTube / loss of basic skills / cannot navigate without maps</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, the reliance is growing rapidly. Firstly, teenagers depend on applications for everything, from searching homework answers to entertaining themselves on TikTok. Secondly, this leads to a loss of basic skills, like being unable to find directions without digital maps."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Should parents limit their children’s use of computer programs and computer games? Why and how?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>why: prevent eye strain, game addiction / how: use screen-time apps, encourage outdoor sports</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Yes, parental control is necessary. Regarding the reason, limiting screen time prevents severe eye strain and game addiction. As for the method, parents can install screen-time tracking apps and encourage children to play outdoor sports instead."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Ban social media</td><td><strong>Prohibit platform access / Impose a digital restriction</strong></td></tr>
+                            <tr><td>Reliant on tech</td><td><strong>Overly dependent on digital infrastructure</strong></td></tr>
+                            <tr><td>Loss of basic skills</td><td><strong>Atrophy of foundational life skills</strong></td></tr>
+                            <tr><td>Limit use</td><td><strong>Regulate screen time / Restrict digital exposure</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-tv" class="topic-panel">
+                <div class="topic-header">A TV or online program you like to watch</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>Do you think we can acquire knowledge from watching TV programs?</li>
+                        <li>Do you think watching talk shows is a waste of time?</li>
+                        <li>Do teachers play videos in class in your country?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> Do you think we can acquire knowledge from watching TV programs?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>yes, visual learning / documentaries / learn about history, science effortlessly through animations</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Definitely, television is a great tool for visual learning. Scientific channels or documentaries provide high-quality videos that help students understand complex history or science concepts effortlessly compared to reading dense textbooks."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Do you think watching talk shows is a waste of time?</div>
+                    <div class="method-badge">Cách 2: Depends on (Content)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>depends on the content / celebrity gossip: entertainment, waste of time / educational talk shows: hear from experts, learn life lessons</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I believe it depends on the show's content. If it's just celebrity gossip, it is purely for entertainment and can be a waste of time. However, watching educational interviews with successful entrepreneurs offers valuable life lessons."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 3</span> Do teachers play videos in class in your country?</div>
+                    <div class="method-badge">Cách 4: Contexts (Past vs Now)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>past: blackboard, chalk, theoretical / now: smart boards, short clips to illustrate lessons</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Classroom methods have upgraded significantly. In the past, teachers only used blackboards and chalk, making lessons theoretical. Currently, thanks to smart boards, teachers frequently play short educational videos to make subjects like geography more vivid."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Acquire knowledge</td><td><strong>Absorb information / Cultivate intellectual insights</strong></td></tr>
+                            <tr><td>Dense textbooks</td><td><strong>Voluminous, text-heavy publications</strong></td></tr>
+                            <tr><td>Waste of time</td><td><strong>Unproductive expenditure of time / Time-wasting pursuit</strong></td></tr>
+                            <tr><td>More vivid</td><td><strong>Immensely interactive and visually engaging</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div id="topic-spent" class="topic-panel">
+                <div class="topic-header">An item on which you spent more than expected</div>
+                
+                <div class="overview-box">
+                    <h3>DANH SÁCH CÂU HỎI HOÀN CHỈNH:</h3>
+                    <ol>
+                        <li>What kind of things are people happy to pay a high price for?</li>
+                        <li>Do you think it is the rich people’s responsibility to donate money to people in need?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 1</span> What kind of things are people happy to pay a high price for?</div>
+                    <div class="method-badge">Cách 1: List ideas (2 ideas)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>high-quality electronic gadgets / smartphones, laptops / memorable life experiences / luxury travel, concerts</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"Consumers willingly invest in two main categories. Firstly, high-quality electronic gadgets like smartphones or laptops because they are durable and useful. Secondly, people gladly pay for memorable life experiences, such as luxury travel or music concerts."</p>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-title"><span class="q-badge">Câu 2</span> Do you think it is the rich people’s responsibility to donate money to people in need?</div>
+                    <div class="method-badge">Cách 3: Deep dive (1 idea)</div>
+                    <div class="outline-section">
+                        <strong>Gợi ý trả lời theo cụm (Outline):</strong>
+                        <p>not a forced obligation, should be voluntary / encourage charity / act of kindness / bridge wealth gap</p>
+                    </div>
+                    <div class="sample-section">
+                        <strong>Câu trả lời hoàn chỉnh:</strong>
+                        <p>"I don't think it should be a forced legal responsibility, but rather a voluntary act of kindness. Wealthy citizens should be encouraged to donate because their financial contributions can significantly support local charities and bridge the wealth gap."</p>
+                    </div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>⭐ BẢNG CỤM TỪ PARAPHRASE HAY ĐẠT BAND 7.0 SPEAKING</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Cụm từ gốc / Diễn đạt cơ bản</th>
+                                <th style="width: 50%;">Cụm từ nâng cấp nâng Band 7.0+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Pay a high price</td><td><strong>Fork out substantial sums of money / Splurge on premium products</strong></td></tr>
+                            <tr><td>Durable</td><td><strong>Possess long-lasting utility / Resilient to wear and tear</strong></td></tr>
+                            <tr><td>Forced obligation</td><td><strong>Mandatory legal prerequisite / Coerced duty</strong></td></tr>
+                            <tr><td>Bridge wealth gap</td><td><strong>Mitigate economic disparity / Alleviate social inequality</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function openTopic(evt, topicId) {
+            // Lấy tất cả các tab panel và ẩn đi
+            const panels = document.getElementsByClassName("topic-panel");
+            for (let i = 0; i < panels.length; i++) {
+                panels[i].classList.remove("active");
+            }
+
+            // Lấy tất cả các nút tab và bỏ active
+            const buttons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+
+            // Hiển thị panel được chọn và kích hoạt nút tương ứng
+            document.getElementById(topicId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+
+            // Tự động cuộn mượt mà về đầu khung nội dung bên phải khi đổi tab
+            document.querySelector(".content-area").scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
